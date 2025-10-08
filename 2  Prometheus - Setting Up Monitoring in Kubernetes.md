@@ -33,6 +33,21 @@ Here's a concise **Day 2 Summary** of your Prometheus learning journey, tailored
 * **PushGateway**:
   Allows ephemeral/short-lived jobs to **push** metrics.
 
+  
+### 📤 Pushgateway
+- The Pushgateway is used to expose metrics from short-lived jobs or applications that cannot be scraped directly by Prometheus.
+- These jobs push their metrics to the Pushgateway, which then makes them available for Prometheus to scrape(pull).
+- Use Case:
+    - It's particularly useful for batch jobs or tasks that have a limited lifespan and would otherwise not have their metrics collected.
+    
+  ### 🖥️ Prometheus Web UI
+- The Prometheus Web UI allows users to explore the collected metrics data, run ad-hoc PromQL queries, and visualize the results directly within Prometheus.
+
+### 📊 Grafana
+- Grafana is a powerful dashboard and visualization tool that integrates with Prometheus to provide rich, customizable visualizations of the metrics data.
+
+
+
 ---
 
 #### ☁️ **Prometheus Setup on EKS (Kubernetes)**
