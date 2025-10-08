@@ -5,7 +5,13 @@ Here's a concise **Day 2 Summary** of your Prometheus learning journey, tailored
 ### ✅ **Day 2: Prometheus - Setting Up Monitoring in Kubernetes (EKS)**
 
 #### 📘 **Core Concepts**
-
+- Prometheus server is the core of the monitoring system. It is responsible for scraping metrics from various configured targets, storing them in its time-series database (TSDB), and serving queries through its HTTP API.
+- Components:
+    - **Retrieval**: This module handles the scraping of metrics from endpoints, which are discovered either through static configurations or dynamic service discovery methods.
+    - **TSDB (Time Series Database)**: The data scraped from targets is stored in the TSDB, which is designed to handle high volumes of time-series data efficiently.
+    - **HTTP Server**: This provides an API for querying data using PromQL, retrieving metadata, and interacting with other components of the Prometheus ecosystem.
+- **Storage**: The scraped data is stored on local disk (HDD/SSD) in a format optimized for time-series data.
+- 
 * **Prometheus**:
 
   * A **time-series** database and **monitoring system**
