@@ -10,3 +10,8 @@ PushGateway: Allows ephemeral/short-lived jobs to push metrics.
 
 
 
+EFK Stack Overview
+Component	Role
+Elasticsearch	Stores and indexes log data for search & analytics
+Fluentbit	Lightweight log forwarder; runs as DaemonSet
+Kibana	Visualization and querying UI for logs
